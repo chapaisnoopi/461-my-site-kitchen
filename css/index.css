@@ -1,9 +1,28 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+	text-decoration: none;
+}
+body {
+ 	background: #faef5777;
 }
 
 body {
 	background:
-     rgba(250, 239, 87, 0.466) 
+    #faef5777;
+}
+
+nav ul li {
+    float: left;
+	list-style: none;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    padding: 0 5px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: #c49c1cbe;
 }
