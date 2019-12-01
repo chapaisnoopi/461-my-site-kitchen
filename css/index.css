@@ -5,11 +5,6 @@ body {
  	background: #faef5777;
 }
 
-body {
-	background:
-    #faef5777;
-}
-
 nav ul li {
     float: left;
 	list-style: none;
@@ -24,5 +19,5 @@ li {
 
 .fixed {
     position: fixed;
-    background-color: #c49c1cbe;
+    background-color: #c49d1cee;
 }
