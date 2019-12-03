@@ -1,23 +1,40 @@
-* {
-	text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css?family=Akronim|Lato&display=swap');
+
+
+
 body {
- 	background: #faef5777;
+ 	background: burlywood;
+    margin: auto;
 }
 
-nav ul li {
-    float: left;
-	list-style: none;
-    padding: 0 5px;
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-    padding: 0 5px;
+:root {
+    font-family: 'Lato', sans-serif;
+    --main-color: black;
+    scroll-behavior: smooth;
 }
 
 .fixed {
     position: fixed;
-    background-color: #c49d1cee;
+    background-color: white;
+    list-style: none;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+body nav .fixed a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+
+  
+
+
+
+
+
+
+
 }
