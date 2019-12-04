@@ -11,13 +11,13 @@
 <body>
     <nav>
         <ul class="up">
-            <li><a title="Наше місцезнаходження" href="#contact">м. Львів вул. Стрийська 10</a></li>
+            <li><a title="Наше місцезнаходження" href="#contacts">м. Львів вул. Стрийська 10</a></li>
             <li>
                 <a title="Подзвонити" href="tel:380670000000">(067)000 00 00</a>
                 <a lang="en" title="Вайбер" href="viber://add?number=380670000000">viber</a>
             </li>
             <li><a title="Подзвонити" href="tel:380630000000">(063)000 00 00</a></li>
-            <li><a title="Зворотній зв'язок" href="form.html">Зворотній зв'язок</a></li>
+            <li class="up-contacts"><a href="#contacts" title="Контакти">Контакти</a></li>
         </ul>
     </nav>
     <header id="header">
@@ -27,14 +27,16 @@
                 <li class="font-other">BoVaRo</li>  
                 <li>кухні під замовлення</li>
             </ul>
+            <a class="emty-cart" href="#" title="Кошик"><img src="img/empty-cart.png"  alt="Кошик"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html" title="Головна сторінка">Головна</a></li>
-                <li><a href="#about" title="Інформація про нас">Про нас</a></li>
-                <li><a href="photogallery.html" title="Тут можна переглянути фотографії">Фотогалерея</a></li>
+                <li><a href="#about" title="Інформація про нас">Пронас</a></li>
+                <li class="hide-photo"><a href="photogallery.html" title="Тут можна переглянути фотографії">Фотогалерея</a></li>
                 <li><a href="shop.html" title="shop.html">Магазин</a></li>
-                <li><a href="#contact" title="Контакти">Контакти</a></li>
+                <li class="hide-contacts"><a href="#contacts" title="Контакти">Контакти</a></li>
+                <li class="emty-cart-menu"><a href="#" title="Кошик"><img src="img/empty-cart.png"  alt="Кошик"></a></li>
             </ul>
         </nav>
     </header>
@@ -45,29 +47,23 @@
             </a>
         </div>
         <div id="about">
-            <br>
-            <br>
             <h2>Про нас</h2>
             <h3>Розробка проекту</h3>
-			<p>У нас ви можете купити сучасні, дизайнерські, хай-тек кухні. 
-                Виготовляємо на замовлення по ваших замірах або майстер
-				безкоштовно зробить оцінку Вашої майбутньої кухні.
+			<p>
             </p>
             <img src="img/size.jpg" width="300" alt="size">
             <h3>Власне виробництво</h3>
-            <p>Виготовляємо під замовлення функціональні та сучасні меблі 
-                по ваших замірах або майстер безкоштовно приїде і зробить оцінку.
+            <p>
             </p>
             <img src="img/production.gif" width="300" alt="production">
             <h3>Фурнітура Blum</h3>
-            <p>Технології руху від Blum роблять процес відкривання і закривання меблів ще зручнішим. 
-                А ще – це більше можливостей для дизайну меблів і висока якість руху
+            <p>
             </p>
             <img src="img/blum.jpg" width="300" alt="blum">
         </div>
         <a href="#header" title="Головна сторінка">Вгору</a>
     </main>
-    <footer id="contact">
+    <footer id="contacts">
         <div>
             <h2>Контакти</h2>
             <ul>
@@ -75,6 +71,8 @@
                 <li>e-mail:<a lang="uk" title="Написати нам" href="mailto:bovaro@gmail.com">bovaro@gmail.com</a></li>
                 <li>тел.:<a lang="uk" title="Подзвонити" href="#contact">(067) 000 00 00</a> viber</li>
                 <li>тел.:<a lang="uk" title="Подзвонити" href="#contact">(063) 000 00 00</a></li>
+                <li><a title="Зворотній зв'язок" href="form.html">Зворотній зв'язок</a></li>
+
             </ul>
             <a lang="uk"  href="https://www.facebook.com/groups/978439779198456/"><img src="img/facebook.jpg" width="50" title="Ми у фесбуці"></a>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.7319314621195!2d24.02944841504385!3d49.828703339849994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add60b44f4d3d%3A0x71121ca1e3d0992e!2z0LLRg9C70LjRhtGPINCh0YLRgNC40LnRgdGM0LrQsCwgMTAsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1575217577712!5m2!1suk!2sua" width="300" height="300"></iframe>

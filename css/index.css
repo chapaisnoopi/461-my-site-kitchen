@@ -13,7 +13,47 @@ body {
     scroll-behavior: smooth;
 }
 
-body nav .up {
+@media (min-width: 700px) {
+    body nav .up {
+        flex-direction:row;
+        justify-content: space-around;
+    }
+    body nav .up li {
+        width: auto;
+    }
+
+    ul .hide-contacts {
+        display: flex;
+    }
+
+    .up-contacts {
+        display: none;
+    }
+}
+
+@media (min-width: 450px) {
+    div .emty-cart {
+        padding: 0 10px 0 0 ;
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    div .emty-cart img {
+        width: 40px;
+    }
+
+    ul .hide-photo {
+        display: flex;
+    }
+
+    .emty-cart-menu {
+        display: none;
+    }
+
+}
+
+nav .up {
     background-color: white;
     list-style: none;
     margin: 0;
@@ -21,30 +61,32 @@ body nav .up {
     display: flex;
     flex-direction:column;
     align-items: center;
-    text-decoration: none;
 }
 
-body nav .up a {
+nav .up a {
     text-decoration: none;
     color: var(--main-color);
     }
 
-body nav .up li {
+.up li {
     padding: 0 10px;
+    width: 280px;
+
 }
 
-@media (min-width: 550px) {
-    body nav .up {
-        display: flex;
-        flex-direction:row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+
+header div li {
+    color: var(--main-color);
+    font-size: 1rem;
 }
 
 #header .font-other {
     font-family: 'Akronim';
     font-size: 3.5rem
+}
+
+.emty-cart {
+    display: none;
 }
 
 header div ul {
@@ -54,20 +96,37 @@ header div ul {
     list-style: none;
     padding: 0 10px;
     margin: 0;
-    
-}
-header div li {
-    color: var(--main-color);
-    font-size: 1rem;
 }
 
 header div {
     display: flex;
-    text-decoration: none;
     align-items: center;
 }
  
-header div a{
+header nav ul li a{
     text-decoration: none;
+    color: var(--main-color);
 }
 
+header nav ul li {
+    list-style: none;
+    padding: 0 5px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 5px;
+    align-items: center;
+}
+
+.hide-photo,
+.hide-contacts {
+    display: none;
+}
+
+.emty-cart-menu img {
+    width: 40px;
+}
