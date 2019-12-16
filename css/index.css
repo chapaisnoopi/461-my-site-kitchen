@@ -53,6 +53,17 @@ body {
 
 }
 
+.email {
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    max-width: 980px;
+}
+
+.email img {
+    width: 100px;
+}
+
 header nav {
     margin: 0px;
 }
