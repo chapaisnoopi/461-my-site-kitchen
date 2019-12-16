@@ -4,7 +4,7 @@ body {
  	background: burlywood;
     margin: auto;
     max-width: 980px;
-    font-size: 1.35rem;
+    font-size: 1.30rem;
 }
 
 :root {
@@ -40,7 +40,7 @@ body {
     }
 
     div .emty-cart img {
-        width: 40px;
+        width: 35px;
     }
 
     ul .hide-photo {
@@ -51,6 +51,14 @@ body {
         display: none;
     }
 
+}
+
+header nav {
+    margin: 0px;
+}
+
+header nav ul {
+    margin: 5px;
 }
 
 nav .up {
@@ -128,5 +136,33 @@ header nav ul {
 }
 
 .emty-cart-menu img {
-    width: 40px;
+    width: 35px;
+}
+
+
+
+#photogallery {
+    background-image: url(../img/front.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li, #about h2, #about h3, #about ul button {
+    text-align: center;
+}
+
+#about ul li img {
+    width: 100%;
+    padding: 10px 0px 0px;
+}
+
+
+#about a {
+    color: blue;
 }
