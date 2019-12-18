@@ -1,0 +1,27 @@
+#photogallery {
+    background-image: url(../img/front.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about * {
+    text-align: center;
+}
+
+#about img {
+    width: 100%;
+    padding: 10px 0px 0px;
+}
+
+
+#about a {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}

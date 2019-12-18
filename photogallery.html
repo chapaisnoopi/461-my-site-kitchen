@@ -7,75 +7,69 @@
     <title>bovaro-mebel</title>
     <link sizes="100x100" rel="shortcut icon" href="img/shortcut-icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/photodallery.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body>
-    <footer class="fixed">
-        <div>
-            <a lang="uk" title="Наше місцезнаходження" href="#contact">м. Львів вул. Стрийська 10</a>
-            <a lang="uk" title="Подзвонити" href="#contact">(067) 000 00 00</a> viber
-            <a lang="uk" title="Подзвонити" href="#contact">(063) 000 00 00</a>
-            <br>             
-            <a lang="uk" title="Зворотній зв'язок" href="form.html">Зворотній зв'язок</a>
-        </div>
-    </footer>
+<body class="body">
+    <nav>
+        <ul class="phones">
+            <li><a title="Наше місцезнаходження" href="#contacts">м. Львів вул. Стрийська 10</a></li>
+            <li>
+                <a title="Подзвонити" href="tel:380670000000">(067)000 00 00</a>
+                <a lang="en" title="Вайбер" href="viber://add?number=380670000000">viber</a>
+            </li>
+            <li><a title="Подзвонити" href="tel:380630000000">(063)000 00 00</a></li>
+            <li class="up-contacts"><a href="#contacts" title="Контакти">Контакти</a></li>
+        </ul>
+        <div class="clock"></div>
+    </nav>
     <header id="header">
-        <br>
-        <br>
         <div>
-            <a href="index.html"><img src="img/logo.jpg" alt="logo" width="100" title="Головна"></a>                        
-            <a href="index.html" title="Головна">BoVaRo</a>
-            <span>кухні під замовлення</span>
+            <a href="index.html" title="Головна"><img src="img/logo.jpg"  alt="Логотип"></a>
+            <ul>
+                <li class="font-other">BoVaRo</li>  
+                <li>кухні під замовлення</li>
+            </ul>
+            <a class="emty-cart" href="#" title="Кошик"><img src="img/empty-cart.png"  alt="Кошик"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html" title="Головна сторінка">Головна</a></li>
-                <li><a href="index#about" title="Інформація про нас">Про нас</a></li>
-                <li><a href="photogallery.html" title="Тут можна переглянути фотографії">Фотогалерея</a></li>
+                <li><a href="#about" title="Інформація про нас">Пронас</a></li>
+                <li class="hide-photo"><a href="photogallery.html" title="Тут можна переглянути фотографії">Фотогалерея</a></li>
                 <li><a href="shop.html" title="shop.html">Магазин</a></li>
-                <li><a href="#contact" title="Контакти">Контакти</a></li>
+                <li class="hide-contacts"><a href="#contacts" title="Контакти">Контакти</a></li>
+                <li class="emty-cart-menu"><a href="#" title="Кошик"><img src="img/empty-cart.png"  alt="Кошик"></a></li>
             </ul>
         </nav>
     </header>
+    <div class="email"><a href="form.html"><img src="img/email.png" alt="Звоортній зв'язок"></a></div>
     <main>
         <div>
-            <h2>Фотогалерея</h2>
-            <h3>Тут ви зможете подивитися на робити як на стадії 
+            <h3>Фотогалерея</h3>
+            <p>Тут ви зможете подивитися на робити як на стадії 
                 проектування так і в кінцевому варіанті виконанні в замовника. 
-            </h3>
+            </p>
         </div>
-        <div>
-            <a href="">
-                <img src="photogallery/photo_1.jpg" alt="" width="300" title="photo_1">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="photogallery/photo-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="photogallery/photo-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="photogallery/photo-2.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
             </a>
-            <a href="">
-                <img src="photogallery/photo_3.jpg" alt="" width="300" title="photo_3">
-            </a>
-            <a href="">
-                <img src="photogallery/photo_4.jpg" alt="" width="300" title="photo_4">
-            </a>
-            <a href="">
-                <img src="photogallery/photo_6.jpg" alt="" width="300" title="photo_6">
-            </a>
-            <a href="">
-                <img src="photogallery/photo_7.jpg" alt="" width="300" title="photo_7">
-            </a>
-            <a href="">
-                <img src="photogallery/photo_8.jpg" alt="" width="300" title="photo_8">
-            </a>
-            <a href="">
-                <img src="photogallery/photo_9.jpg" alt="" width="300" title="photo_9">
-            </a>
-             <a href="">
-                <img src="photogallery/photo_10.jpg" alt="" width="300" title="photo_10">
-            </a>
-            <a href="">
-                <img src="photogallery/photo_11.jpg" alt="" width="300" title="photo_11">
-            </a>
-            <a href="">
-                <img src="photogallery/photo_14.jpg" alt="" width="300" title="photo_14">
-            </a>
-            <a href="">
-                <img src="photogallery/photo_15.jpg" alt="" width="300" title="photo_15">
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
             </a>
         </div>
     </main>
@@ -89,8 +83,11 @@
                 <li>тел.:<a lang="uk" title="Подзвонити" href="#contact">(063) 000 00 00</a></li>
             </ul>
             <a lang="uk"  href="https://www.facebook.com/groups/978439779198456/"><img src="img/facebook.jpg" width="50" title="Ми у фесбуці"></a>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.7319314621195!2d24.02944841504385!3d49.828703339849994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add60b44f4d3d%3A0x71121ca1e3d0992e!2z0LLRg9C70LjRhtGPINCh0YLRgNC40LnRgdGM0LrQsCwgMTAsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1575217577712!5m2!1suk!2sua" width="400" height="300"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.7319314621195!2d24.02944841504385!3d49.828703339849994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add60b44f4d3d%3A0x71121ca1e3d0992e!2z0LLRg9C70LjRhtGPINCh0YLRgNC40LnRgdGM0LrQsCwgMTAsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1575217577712!5m2!1suk!2sua" width="300" height="300"></iframe>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

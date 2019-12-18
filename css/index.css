@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Akronim|Lato&display=swap');
 
-body {
+.body {
     background: burlywood;
     margin: auto;
     max-width: 980px;
-    font-size: 1.20rem;
+    font-size: 1.15rem;
+    line-height: normal;
+    font-family: 'Lato', sans-serif;
 }
 
 :root {
@@ -14,11 +16,11 @@ body {
 }
 
 @media (min-width: 700px) {
-    body nav .up {
+    nav .phones {
         flex-direction:row;
         justify-content: space-around;
     }
-    body nav .up li {
+    nav .phones li {
         width: auto;
     }
 
@@ -50,7 +52,9 @@ body {
     .emty-cart-menu {
         display: none;
     }
-
+    .email a img {
+        width: 100px;
+    }    
 }
 
 .email {
@@ -58,11 +62,34 @@ body {
     width: 100%;
     text-align: right;
     max-width: 980px;
+    z-index: 2;
 }
 
 .email img {
-    width: 100px;
+    width: 70px;
 }
+
+.phones {
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phones a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.phones li {
+    padding: 0 10px;
+    width: 280px;
+    box-sizing: content-box;
+}
+
 
 header nav {
     margin: 0px;
@@ -71,28 +98,6 @@ header nav {
 header nav ul {
     margin: 5px;
 }
-
-nav .up {
-    background-color: white;
-    list-style: none;
-    margin: 0;
-    padding: 10px 10px;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-}
-
-nav .up a {
-    text-decoration: none;
-    color: var(--main-color);
-    }
-
-.up li {
-    padding: 0 10px;
-    width: 280px;
-
-}
-
 
 header div li {
     color: var(--main-color);
@@ -147,33 +152,9 @@ header nav ul {
 }
 
 .emty-cart-menu img {
-    width: 35px;
+    width: 30px;
 }
 
 
 
-#photogallery {
-    background-image: url(../img/front.png);
-    background-position: center;
-    background-size: cover;
-    min-height: 300px;
-}
 
-#about ul {
-    list-style: none;
-    padding: 0;
-}
-
-#about ul li, #about h2, #about h3, #about ul button {
-    text-align: center;
-}
-
-#about ul li img {
-    width: 100%;
-    padding: 10px 0px 0px;
-}
-
-
-#about a {
-    color: blue;
-}
