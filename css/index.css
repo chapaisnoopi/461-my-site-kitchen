@@ -63,6 +63,8 @@
     text-align: right;
     max-width: 980px;
     z-index: 2;
+    right: 20px;
+    bottom: 50px;
 }
 
 .email img {
