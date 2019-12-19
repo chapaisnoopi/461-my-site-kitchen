@@ -10,18 +10,62 @@
     padding: 0;
 }
 
+#about {
+    width: auto;
+}
+
 #about * {
     text-align: center;
 }
 
 #about img {
     width: 100%;
-    padding: 10px 0px 0px;
+    padding-top: 10px;
 }
-
 
 #about a {
     color: blue;
     cursor: pointer;
     text-decoration: underline;
+}
+
+#about h2 {
+    padding-top: 40px;
+}
+
+#about a:hover {
+    color: green;
+}
+
+@media (min-width: 700px) {
+    #about div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #about div img {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    main #about h2 {
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .order {
+        order: 2;
+    }
+
+    .img {
+        width: 65%;
+    }
+    
+    #about div span:first-child {
+        width: 35%;
+
+    }
+   
 }

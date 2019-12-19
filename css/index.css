@@ -33,6 +33,10 @@
     }
 }
 
+#about h2 {
+    padding-top: 40px;
+}
+
 @media (min-width: 450px) {
     div .emty-cart {
         padding: 0 10px 0 0 ;
@@ -52,22 +56,28 @@
     .emty-cart-menu {
         display: none;
     }
-    .email a img {
+
+    body #email img {
         width: 100px;
     }    
 }
 
-.email {
+.clock {
+    position: static;
+}
+
+#email {
     position: fixed;
-    width: 100%;
-    text-align: right;
+    padding: 0;
     max-width: 980px;
     z-index: 2;
     right: 20px;
     bottom: 50px;
+    background-color: transparent;
+    border-color: transparent;
 }
 
-.email img {
+#email img {
     width: 70px;
 }
 
@@ -95,6 +105,7 @@
 
 header nav {
     margin: 0px;
+    background-color: bisque;
 }
 
 header nav ul {
@@ -106,7 +117,7 @@ header div li {
     font-size: 1rem;
 }
 
-#header .font-other {
+#header #font-other {
     font-family: 'Akronim';
     font-size: 3.5rem
 }
@@ -132,11 +143,19 @@ header div {
 header nav ul li a{
     text-decoration: none;
     color: var(--main-color);
+    padding: 0 5px;   
+    border: 1px solid transparent;
+}
+
+header nav ul li a:hover {
+    border: 1px solid var(--main-color);
+    background-color: burlywood;
+    text-decoration: none;
+    color: var(--main-color);
 }
 
 header nav ul li {
     list-style: none;
-    padding: 0 5px;
 }
 
 header nav ul {
@@ -157,6 +176,19 @@ header nav ul {
     width: 30px;
 }
 
+.up {
+    padding-bottom: 50px;
+    padding-top: 50px;
 
+}
 
+.map iframe {
+    width: 90%;
+    height: 100%;
+}
 
+.map {
+    display: block;
+    text-align: center;
+    height: 400px;
+}

@@ -8,7 +8,9 @@
     <link sizes="100x100" rel="shortcut icon" href="img/shortcut-icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/photodallery.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body class="body">
     <nav>
@@ -21,13 +23,13 @@
             <li><a title="Подзвонити" href="tel:380630000000">(063)000 00 00</a></li>
             <li class="up-contacts"><a href="#contacts" title="Контакти">Контакти</a></li>
         </ul>
-        <div class="clock"></div>
+        <div class="clock"><br></div>
     </nav>
     <header id="header">
         <div>
-            <a href="index.html" title="Головна"><img src="img/logo.jpg"  alt="Логотип"></a>
+            <a href="index.html" title="Головна"><img src="img/logo.jpg" alt="Логотип"></a>
             <ul>
-                <li class="font-other">BoVaRo</li>  
+                <li id="font-other" class="animated bounce slow">BoVaRo</li>  
                 <li>кухні під замовлення</li>
             </ul>
             <a class="emty-cart" href="#" title="Кошик"><img src="img/empty-cart.png"  alt="Кошик"></a>
@@ -35,7 +37,7 @@
         <nav>
             <ul>
                 <li><a href="index.html" title="Головна сторінка">Головна</a></li>
-                <li><a href="#about" title="Інформація про нас">Пронас</a></li>
+                <li><a href="../#about" title="Інформація про нас">Пронас</a></li>
                 <li class="hide-photo"><a href="photogallery.html" title="Тут можна переглянути фотографії">Фотогалерея</a></li>
                 <li><a href="shop.html" title="shop.html">Магазин</a></li>
                 <li class="hide-contacts"><a href="#contacts" title="Контакти">Контакти</a></li>
@@ -43,7 +45,6 @@
             </ul>
         </nav>
     </header>
-    <div class="email"><a href="form.html"><img src="img/email.png" alt="Звоортній зв'язок"></a></div>
     <main>
         <div class="photo-text">
             <h3>Фотогалерея</h3>
@@ -73,19 +74,70 @@
             </a>
         </div>
     </main>
-    <footer id="contact">
+    <footer id="contacts">
         <div>
             <h2>Контакти</h2>
             <ul>
                 <li>м. Львів вул. Стрийська 10</li>
                 <li>e-mail:<a title="Написати нам" href="mailto:bovaro@gmail.com">bovaro@gmail.com</a></li>
-                <li>тел.:<a title="Подзвонити" href="#contact">(067) 000 00 00</a> viber</li>
-                <li>тел.:<a title="Подзвонити" href="#contact">(063) 000 00 00</a></li>
+                <li>тел.:
+                    <a title="Подзвонити" href="tel:380670000000">(067) 000 00 00</a>
+                    <a lang="en" title="Вайбер" href="viber://add?number=380670000000">viber</a>
+                </li>
+                <li>тел.:<a title="Подзвонити" href="tel:380630000000">(063) 000 00 00</a></li>
+                <li><a data-toggle="modal" data-target="#exampleModal" title="Зворотній зв'язок" href="#">Зворотній зв'язок</a></li>
+                <a href="https://www.facebook.com/groups/978439779198456/"><img src="img/facebook.jpg" width="50" title="Ми у фесбуці"></a>
             </ul>
-            <a lang="uk"  href="https://www.facebook.com/groups/978439779198456/"><img src="img/facebook.jpg" width="50" title="Ми у фесбуці"></a>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.7319314621195!2d24.02944841504385!3d49.828703339849994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add60b44f4d3d%3A0x71121ca1e3d0992e!2z0LLRg9C70LjRhtGPINCh0YLRgNC40LnRgdGM0LrQsCwgMTAsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1575217577712!5m2!1suk!2sua" width="300" height="300"></iframe>
-        </div>
+            <span class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10294.928436699498!2d24.031637!3d49.8287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add60b44f4d3d%3A0x71121ca1e3d0992e!2z0LLRg9C70LjRhtGPINCh0YLRgNC40LnRgdGM0LrQsCwgMTAsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1576785769980!5m2!1suk!2sua"></iframe>
+            </div>
     </footer>
+    <!-- Button trigger modal -->
+
+    <button id="email" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        <img src="img/email.png" alt="Звоортній зв'язок">
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalLabel">Форма зворотньго звя'зку</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <h3>Зворотній дзвінок</h3>
+                <form method="POST" action="https://formspree.io/moqvjjnw">
+                    <label class="form-number">
+                        <span>Залишіть свій номер</span>
+                        <input type="text" placeholder="+380" name="name" required>
+                    </label>
+                    <input type="submit" class="btn btn-primary" value="і ми вам перетелефонуємо">
+                </form>
+                <h3>Або повідомлення</h3>
+                <form method="POST" action="https://formspree.io/moqvjjnw">
+                    <label class="form-post">
+                        <span>Ваша електронна пошта</span>
+                        <input type="text" placeholder="Email" name="email" required>
+                    </label>
+                    <label class="form-text">
+                        <span>Що вас цікавить</span>
+                        <textarea name="comments" required>
+                        </textarea>
+                    </labelclass="form-post">
+                    <input type="submit" class="btn btn-primary" value="і ми відпишемо">
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="js/photogallery.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
