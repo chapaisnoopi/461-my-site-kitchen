@@ -5,11 +5,6 @@
     min-height: 350px;
 }
 
-#about ul {
-    list-style: none;
-    padding: 0;
-}
-
 #about {
     width: auto;
 }
@@ -38,7 +33,7 @@
 }
 
 @media (min-width: 700px) {
-    #about div {
+    #about .flex-img {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -59,11 +54,11 @@
         order: 2;
     }
 
-    .img {
+    #about div img {
         width: 65%;
     }
     
-    #about div span:first-child {
+    #about .flex-img div {
         width: 35%;
 
     }

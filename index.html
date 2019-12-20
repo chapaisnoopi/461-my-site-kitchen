@@ -51,41 +51,35 @@
         </a>
         <div id="about">
             <h2>Про нас</h2>
-            <div>
-                <span>
+            <div class="flex-img">
+                <div>
                     <h3>Розробка проекту</h3>
-                    <article>
+                    <p>
                         <span class="more-project-pluss">У нас ви можете купити...</span>
                         <a class="more-project">Показати більше</a>
-                    </article>
-                </span>
-                <span class="img">
-                    <img src="img/size.jpg" alt="Розробка проекту">
-                </span>
+                    </p>
+                </div>
+                <img src="img/size.jpg" alt="Розробка проекту">
             </div>
-            <div>
-                <span class="order">
+            <div class="flex-img">
+                <div class="order">
                     <h3>Власне виробництво</h3>
-                    <article>
+                    <p>
                         <span class="more-production-pluss">Виготовляємо під замовлення...</span>
                         <a class="more-production">Показати більше</a>
-                    </article>
-                </span>
-                <span class="img">
-                    <img src="img/production.jpg" alt="Власне виробництво">
-                </span>
+                    </p>
+                </div>
+                <img src="img/production.jpg" alt="Власне виробництво">
             </div>
-            <div>
-                <span>
+            <div class="flex-img">
+                <div>
                     <h3>Фурнітура Blum</h3>
-                    <article>
+                    <p>
                         <span class="more-blum-pluss">Технології руху від Blum...</span>
                         <a class="more-blum">Показати більше</a>
-                    </article>
-                </span>
-                <span class="img">
-                    <img src="img/blum.jpg" alt="Фурнітура Blum">
-                </span>
+                    </p>
+                </div>
+                <img src="img/blum.jpg" alt="Фурнітура Blum">
             </div>
         </div>
         <h3 class="up">
@@ -104,11 +98,12 @@
                 </li>
                 <li>тел.:<a title="Подзвонити" href="tel:380630000000">(063) 000 00 00</a></li>
                 <li><a data-toggle="modal" data-target="#exampleModal" title="Зворотній зв'язок" href="#">Зворотній зв'язок</a></li>
-                <a href="https://www.facebook.com/groups/978439779198456/"><img src="img/facebook.jpg" width="50" title="Ми у фесбуці"></a>
+                <li></li><a href="https://www.facebook.com/groups/978439779198456/"><img src="img/facebook.jpg" width="50" title="Ми у фесбуці"></a></li>
             </ul>
             <span class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10294.928436699498!2d24.031637!3d49.8287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add60b44f4d3d%3A0x71121ca1e3d0992e!2z0LLRg9C70LjRhtGPINCh0YLRgNC40LnRgdGM0LrQsCwgMTAsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1576785769980!5m2!1suk!2sua"></iframe>
-            </div>
+            </span>
+        </div>
     </footer>
     <!-- Button trigger modal -->
 
@@ -119,14 +114,14 @@
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
+          <div id="modal-content" class="modal-content">
             <div class="modal-header">
               <h2 class="modal-title" id="exampleModalLabel">Форма зворотньго звя'зку</h2>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div id="modal-body" class="modal-body">
                 <h3>Зворотній дзвінок</h3>
                 <form method="POST" action="https://formspree.io/moqvjjnw">
                     <label class="form-number">
@@ -145,7 +140,7 @@
                         <span>Що вас цікавить</span>
                         <textarea name="comments" required>
                         </textarea>
-                    </labelclass="form-post">
+                    </label class="form-post">
                     <input type="submit" class="btn btn-primary" value="і ми відпишемо">
                 </form>
             </div>
