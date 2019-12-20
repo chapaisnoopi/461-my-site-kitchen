@@ -33,10 +33,6 @@
     }
 }
 
-#about h2 {
-    padding-top: 40px;
-}
-
 @media (min-width: 450px) {
     div .emty-cart {
         padding: 0 10px 0 0 ;

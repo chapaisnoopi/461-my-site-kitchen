@@ -1,4 +1,49 @@
 #products,
-div .modal-content {
+#modal-content-buy {
     background-color: bisque;
 }
+
+#products a:first-child {
+    padding: 16px;
+}
+
+#products {
+    padding: 0;
+}
+
+main .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+@media (min-width: 750px) {
+    div .widch-flax {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #modal-dialog-buy {
+        max-width: 750px;
+    }
+
+    #modal-body-buy {
+        width: 600%;
+    }
+}
+
+@media (min-width: 900px) {
+    div .widch-flax {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #modal-dialog-buy {
+        max-width: 850px;
+    }
+
+    #modal-body-buy {
+        width: 600%;
+    }
+}
+
